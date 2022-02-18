@@ -11,6 +11,18 @@ body {
   align-items: center;
   justify-content: center;
 }
+.dark-button {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  cursor: pointer;
+  color: white;
+  background-color: hsl(0deg, 0%, 30%);
+  border: none;
+  border-radius: 50%;
+}
 .container {
   width: 300px;
   height: 300px;
@@ -49,4 +61,14 @@ body {
 }
 .controls button:nth-child(2) {
   background-color: tomato;
+}
+.dark {
+  background-color: hsl(0deg, 0%, 30%);
+}
+.dark .container {
+  box-shadow: 0px 4px 10px 2px hsla(0deg, 0%, 100%, 0.3);
+}
+.dark .dark-button {
+  background-color: white;
+  color: hsl(0deg, 0%, 30%);
 }
